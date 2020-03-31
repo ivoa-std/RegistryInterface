@@ -1,0 +1,109 @@
+<ri:Resource 
+	xsi:type="vstd:Standard" 
+	created="2016-10-21T09:01:00Z"
+	updated="2016-10-21T09:01:00Z"
+	status="active"
+	xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.0" 
+	xmlns:vstd="http://www.ivoa.net/xml/StandardsRegExt/v1.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0"
+	xsi:schemaLocation="http://www.ivoa.net/xml/VOResource/v1.0
+		http://www.ivoa.net/xml/VOResource/v1.0
+	http://www.ivoa.net/xml/StandardsRegExt/v1.0
+		http://www.ivoa.net/xml/StandardsRegExt/v1.0
+	http://www.ivoa.net/xml/VOResource/v1.0
+		http://www.ivoa.net/xml/VOResource/v1.0">
+
+  <title>Registry Interfaces</title>
+  <identifier>ivo://ivoa.net/std/RegistryInterface</identifier>
+  <curation>
+    <publisher>IVOA</publisher>
+
+    <creator>
+      <name>Dower, T.</name>
+    </creator>
+    <creator>
+      <name>Demleitner, M.</name>
+    </creator>
+    <creator>
+      <name>Benson, K.</name>
+    </creator>
+    <creator>
+      <name>Plante, R.</name>
+    </creator>
+    <creator>
+      <name>Auden, E.</name>
+    </creator>
+    <creator>
+      <name>Graham, M.</name>
+    </creator>
+    <creator>
+      <name>Greene, G.</name>
+    </creator>
+    <creator>
+      <name>Hill, M.</name>
+    </creator>
+    <creator>
+      <name>Linde, T.</name>
+    </creator>
+    <creator>
+      <name>Morris, D.</name>
+    </creator>
+    <creator>
+      <name>O'Mullane, W.</name>
+    </creator>
+    <creator>
+      <name>Rixon, G.</name>
+    </creator>
+    <creator>
+      <name>Stébé, A.</name>
+    </creator>
+    <creator>
+      <name>Andrews, K.</name>
+    </creator>
+
+    <date role="update">2015-03-10</date>
+    <version>1.1</version>
+    <contact>
+      <name>Registry WG</name>
+      <email>registry@ivoa.net</email>
+    </contact>
+  </curation>
+  <content>
+    <subject>Virtual observatory</subject>
+    <subject>Registry</subject>
+    <subject>OAI-PMH</subject>
+    <description>
+The VO Registry provides a mechanism with which VO applications can discover
+and select resources that are relevant for a particular scientific problem.
+This specification defines the operation of this system. It is based on a
+general, distributed model composed of searchable and publishing registries, as
+introduced at the beginning of this document. The main body of the
+specification has two components: (a) an interface for harvesting publishing
+registries, which builds upon the Open Archives Initiative Protocol for
+Metadata Harvesting. (b) A VOResource extension for registering registry
+services and description of a central list of said IVOA registry services.
+Finally, this specification briefly discusses client interfaces to the Registry
+as provided by searchable registries.
+    </description>
+    <referenceURL>http://www.ivoa.net/documents/RegistryInterface</referenceURL>
+    <type>Other</type>
+  	<contentLevel>Research</contentLevel>
+  </content>
+
+  <endorsedVersion status="rec">1.1</endorsedVersion>
+
+	<schema namespace="http://www.ivoa.net/xml/RegistryInterface/v1.0">
+		<location>http://ivoa.net/xml/RegistryInterface/RegistryInterface-v1.0.xsd</location>
+		<description>A small schema defining the global ri:Resource element used
+		as a root element for VOResource records; it is necessary because
+		VOResoruce itself defines no global elements by design.</description>
+	</schema>
+
+	<schema namespace="http://www.ivoa.net/xml/VORegistry/v1.0">
+		<location>http://ivoa.net/xml/VORegistry/VORegistry-v1.0.xsd</location>
+		<description>A VOResource extension defining resource and
+		capability types for describing registry services.</description>
+	</schema>
+
+</ri:Resource>
