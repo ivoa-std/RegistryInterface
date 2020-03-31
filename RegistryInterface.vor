@@ -15,7 +15,7 @@
 		http://www.ivoa.net/xml/VOResource/v1.0">
 
   <title>Registry Interfaces</title>
-  <identifier>ivo://ivoa.net/std/RegistryInterfaceidentifier> 
+  <identifier>ivo://ivoa.net/std/RegistryInterface</identifier>
   <curation>
     <publisher>IVOA</publisher>
 
